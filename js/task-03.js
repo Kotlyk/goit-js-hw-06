@@ -14,10 +14,9 @@ const images = [
 ];
 
 const list = document.querySelector(".gallery");
-console.dir(list);
-for (let i = 0; i < images.length; i += 1) {
-  const img = document.createElement("img");
-  img.src = images[i].url;
-  img.alt = images[i].alt;
-   list.append(img);
-}
+
+const imageNew = images.map(
+  (image) => `<li class = "item"><img class = "item_img" src = ${image.url}><alt = ${image.alt}/></li>`
+).join("");
+
+list.insertAdjacentHTML("beforeend", imageNew);

@@ -23,7 +23,15 @@ button {
   cursor: pointer;
 }
 
-/* .gallery{
+.gallery{
   display: flex;
-  
-} */
+}
+.item{
+list-style: none;
+
+}
+ .item_img{
+  width: auto;
+  height: 500px;
+margin-right: 50px;
+ }
