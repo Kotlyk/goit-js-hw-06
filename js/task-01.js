@@ -2,9 +2,6 @@ const categEl = document.querySelectorAll('.item');
 console.log('Number of categories:', categEl.length);
 
 
-console.log(categEl);
-
-
 categEl.forEach(function (item) {
   const titleEl = item.firstElementChild.textContent;
   const amountEl = item.lastElementChild.childElementCount;
